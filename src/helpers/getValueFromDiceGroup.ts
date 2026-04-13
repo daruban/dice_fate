@@ -15,10 +15,12 @@ export function getValueFromDiceGroup(parent: THREE.Group): number {
   highestNumber = 0;
 
   const dice = parent.getObjectByName("dice");
+
   const mesh = dice?.children[0];
   const locators = mesh?.children;
   if (mesh && locators) {
     for (const locator of locators) {
+       
       // Calculate the dot product between the locator direction and the world up vector
       // The highest dot product will be the locator facing the most up.
       mesh.getWorldPosition(meshPosition);
@@ -29,9 +31,11 @@ export function getValueFromDiceGroup(parent: THREE.Group): number {
       if (dot > highestDot) {
         highestDot = dot;
         // Get the locator number by slicing the name and parsing it
+        console.log("Тип куба:", locator.name);
         highestNumber = parseInt(locator.name.slice(12));
       }
     }
   }
+   
   return highestNumber;
 }

@@ -19,38 +19,37 @@ type GLTFResult = GLTF & {
 export const DF = React.forwardRef<THREE.Group, JSX.IntrinsicElements["group"]>(
   ({ children, ...props }, ref) => {
     const { nodes } = useGLTF(glb) as unknown as GLTFResult;
-    console.log("2_Доступные меши:", Object.keys(nodes));
     return (
       <group ref={ref} {...props} scale={0.1} dispose={null}>
         <group name="dice">
           <mesh name="df" castShadow receiveShadow geometry={nodes.df.geometry}>
             {children}
             <group
-              name="f_locator_1"
+              name="0f1_locator_-1"
               position={[0, -0.77, 0]}
               rotation={[Math.PI, -1.57, 0]}
             />
             <group
-              name="f_locator_2"
+              name="0f1_locator_1"
               position={[-0.77, 0, 0]}
               rotation={[-Math.PI, 0, Math.PI / 2]}
             />
             <group
-              name="f_locator_3"
+              name="0f1_locator_0"
               position={[0, 0, 0.77]}
               rotation={[Math.PI / 2, -1.57, 0]}
             />
             <group
-              name="f_locator_4"
+              name="0f1_locator_0"
               position={[0, 0, -0.77]}
               rotation={[-Math.PI / 2, Math.PI / 2, 0]}
             />
             <group
-              name="f_locator_5"
+              name="0f2_locator_1"
               position={[0.77, 0, 0]}
               rotation={[0, 0, -Math.PI / 2]}
             />
-            <group name="f_locator_6" position={[0, 0.77, 0]} />
+            <group name="0f2_locator_-1" position={[0, 0.77, 0]} />
           </mesh>
         </group>
       </group>
