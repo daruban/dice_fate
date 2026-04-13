@@ -8,6 +8,7 @@ import { D20 } from "./D20";
 import { D4 } from "./D4";
 import { D6 } from "./D6";
 import { D8 } from "./D8";
+import { DF } from "./DF";
 
 type Props = JSX.IntrinsicElements["group"] & { diceType: DiceType };
 
@@ -28,6 +29,8 @@ export const SharpDiceMesh = React.forwardRef<THREE.Group, Props>(
         return <D20 ref={ref} {...props} />;
       case "D100":
         return <D100 ref={ref} {...props} />;
+      case "DF":
+        return <DF ref={ref} {...props} />;
       default:
         throw Error(`Dice type ${diceType} error: not implemented`);
     }

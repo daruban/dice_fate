@@ -6,6 +6,7 @@ import { D100 } from "./D100";
 import { D12 } from "./D12";
 import { D20 } from "./D20";
 import { D4 } from "./D4";
+import { DF } from "./DF";
 import { D6 } from "./D6";
 import { D8 } from "./D8";
 
@@ -16,6 +17,8 @@ export const RoundedDiceMesh = React.forwardRef<THREE.Group, Props>(
     switch (diceType) {
       case "D4":
         return <D4 ref={ref} {...props} />;
+      case "DF":
+        return <DF ref={ref} {...props} />;        
       case "D6":
         return <D6 ref={ref} {...props} />;
       case "D8":

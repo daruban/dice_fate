@@ -37,6 +37,7 @@ function createStandardSet(style: DiceStyle): DiceSet {
       { id: `${id}_D12`, type: "D12", style },
       { id: `${id}_D20`, type: "D20", style },
       { id: `${id}_D100`, type: "D100", style },
+      { id: `${id}_DF`, type: "DF", style },
     ],
     previewImage: standardPreviews[style],
   };

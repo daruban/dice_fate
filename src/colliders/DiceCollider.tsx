@@ -5,6 +5,7 @@ import { D20Collider } from "./D20Collider";
 import { D4Collider } from "./D4Collider";
 import { D6Collider } from "./D6Collider";
 import { D8Collider } from "./D8Collider";
+import { DFCollider } from "./DFCollider";
 
 export function DiceCollider({ diceType }: { diceType: DiceType }) {
   switch (diceType) {
@@ -22,6 +23,8 @@ export function DiceCollider({ diceType }: { diceType: DiceType }) {
       return <D20Collider />;
     case "D100":
       return <D10Collider />;
+    case "DF":
+      return <DFCollider />;
     default:
       throw Error(`Dice type ${diceType} error: not implemented`);
   }
