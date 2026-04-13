@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: dice-fate
+    env: static
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /*
+        name: Access-Control-Allow-Origin
+        value: "*"
