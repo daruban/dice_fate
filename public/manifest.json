@@ -1,11 +1,11 @@
 {
   "name": "Dice",
-  "version": "2.0.0",
+  "version": "0.1.0",
   "manifest_version": 1,
-  "author": "Owlbear Rodeo",
-  "homepage_url": "https://extensions.owlbear.rodeo/dice",
+  "author": "Owlbear Rodeo + Lucius",
+  "homepage_url": "https://extensions.owlbear.rodeo/dice_fate",
   "icon": "/logo.png",
-  "description": "Beautiful 3D dice extension for d20 based systems",
+  "description": "Beautiful 3D dice+fate_dise extension for d20 based systems",
   "action": {
     "title": "Dice",
     "icon": "/icon.svg",
