@@ -28,53 +28,43 @@ export const D10 = React.forwardRef<
           {children}
           <group
             name="010_locator_0"
-            position={[0.4, 0.42, -0.56]}
-            rotation={[2.21, 0.4, -2.65]}
+            position={[0, -0.37, -0.73]}
           />
           <group
             name="010_locator_1"
-            position={[-0.7, -0.37, -0.22]}
-            rotation={[1.27, 0.68, 2]}
+            position={[-0.0, 0.5, 0.6]}
           />
           <group
             name="010_locator_2"
-            position={[0.01, 0.42, 0.69]}
-            rotation={[0.83, 0.01, 0]}
+            position={[0.7, -0.5, -0.1]}
           />
           <group
             name="010_locator_3"
-            position={[0.69, -0.37, -0.23]}
-            rotation={[1.33, -0.7, -1.97]}
+            position={[-0.3, 0.3, -0.7]}
           />
           <group
             name="010_locator_4"
-            position={[-0.41, 0.42, -0.55]}
-            rotation={[2.2, -0.42, 2.65]}
+            position={[-0.42, -0.37, 0.6]}
           />
           <group
             name="010_locator_5"
-            position={[0.44, -0.37, 0.59]}
-            rotation={[2.22, -0.39, -0.49]}
+            position={[-0.74, -0.37, -0.33]}
           />
           <group
             name="010_locator_6"
-            position={[-0.65, 0.42, 0.22]}
-            rotation={[1.28, -0.69, 1.15]}
+            position={[0.66, 0.42, 0.21]}
           />
           <group
             name="010_locator_7"
-            position={[-0.01, -0.37, -0.73]}
-            rotation={[0.83, -0.02, -Math.PI]}
+            position={[0.4, 0.42, -0.56]}
           />
           <group
             name="010_locator_8"
-            position={[0.66, 0.42, 0.21]}
-            rotation={[1.31, 0.7, -1.17]}
+            position={[0.44, -0.37, 0.59]}
           />
           <group
             name="010_locator_9"
-            position={[-0.42, -0.37, 0.6]}
-            rotation={[2.19, 0.43, 0.5]}
+            position={[-0.65, 0.42, 0.22]}
           />
         </mesh>
       </group>
