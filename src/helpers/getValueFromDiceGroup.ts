@@ -32,7 +32,7 @@ export function getValueFromDiceGroup(parent: THREE.Group): number {
         highestDot = dot;
         // Get the locator number by slicing the name and parsing it
         console.log("Тип куба:", locator.name);
-        highestNumber = parseInt(locator.name.slice(12));
+        highestNumber = parseFloat(locator.name.slice(12));
       }
     }
   }

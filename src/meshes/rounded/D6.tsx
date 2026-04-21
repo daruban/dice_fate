@@ -26,30 +26,28 @@ export const D6 = React.forwardRef<THREE.Group, JSX.IntrinsicElements["group"]>(
             {children}
             <group
               name="006_locator_1"
-              position={[0, -0.77, 0]}
-              rotation={[Math.PI, -1.57, 0]}
+              position={[0.8, 0.0, 0]}
             />
             <group
               name="006_locator_2"
-              position={[-0.77, 0, 0]}
-              rotation={[-Math.PI, 0, Math.PI / 2]}
+              position={[0.0, -0.8, 0]}
             />
             <group
               name="006_locator_3"
-              position={[0, 0, 0.77]}
-              rotation={[Math.PI / 2, -1.57, 0]}
+              position={[0, 0, 0.8]}
             />
             <group
               name="006_locator_4"
-              position={[0, 0, -0.77]}
-              rotation={[-Math.PI / 2, Math.PI / 2, 0]}
+              position={[0, 0, -0.8]}
             />
             <group
               name="006_locator_5"
-              position={[0.77, 0, 0]}
-              rotation={[0, 0, -Math.PI / 2]}
+              position={[0.0, 0.8, 0]}
             />
-            <group name="006_locator_6" position={[0, 0.77, 0]} />
+            <group 
+              name="006_locator_6" 
+              position={[-0.8, 0.0, 0]} 
+            />
           </mesh>
         </group>
       </group>

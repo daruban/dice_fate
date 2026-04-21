@@ -26,20 +26,20 @@ export const D4 = React.forwardRef<THREE.Group, JSX.IntrinsicElements["group"]>(
             {children}
             <group
               name="004_locator_1"
-              position={[0, -0.61, -1.27]}
-              rotation={[-1.92, 0, 0]}
+              position={[0.0, 0.7, 0.5]}
             />
             <group
               name="004_locator_2"
-              position={[-1.1, -0.61, 0.63]}
-              rotation={[-1.39, -0.3, 2.12]}
+              position={[0.7, 0.7, -0.0]}
             />
             <group
               name="004_locator_3"
-              position={[1.1, -0.61, 0.63]}
-              rotation={[-1.39, 0.3, -2.12]}
+              position={[-0.7, 0.7, -0.0]}
             />
-            <group name="004_locator_4" position={[0, 1.18, 0]} />
+            <group 
+              name="004_locator_4" 
+              position={[-0.0, 0.7, -0.5]}
+            />
           </mesh>
         </group>
       </group>

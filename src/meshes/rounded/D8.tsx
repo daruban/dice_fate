@@ -26,43 +26,35 @@ export const D8 = React.forwardRef<THREE.Group, JSX.IntrinsicElements["group"]>(
             {children}
             <group
               name="008_locator_1"
-              position={[0.42, 0.52, 0.43]}
-              rotation={[1.11, 0.42, -0.68]}
+              position={[-0.5, 0.5, 0.5]}
             />
             <group
               name="008_locator_2"
-              position={[-0.47, -0.46, -0.45]}
-              rotation={[1.12, 0.43, 2.45]}
+              position={[-0.5, -0.5, 0.5]}
             />
             <group
               name="008_locator_3"
-              position={[0.45, -0.46, -0.47]}
-              rotation={[1.09, -0.41, -2.46]}
+              position={[-0.5, 0.5, -0.5]}
             />
             <group
               name="008_locator_4"
-              position={[-0.43, 0.52, 0.42]}
-              rotation={[1.11, -0.42, 0.69]}
+              position={[-0.5, -0.5, -0.5]}
             />
             <group
               name="008_locator_5"
-              position={[-0.42, 0.52, -0.43]}
-              rotation={[2.04, -0.42, 2.46]}
+              position={[0.5, 0.5, 0.5]}
             />
             <group
               name="008_locator_6"
-              position={[0.47, -0.46, 0.45]}
-              rotation={[2.02, -0.43, -0.69]}
+              position={[0.5, -0.5, 0.5]}
             />
             <group
               name="008_locator_7"
-              position={[-0.45, -0.46, 0.47]}
-              rotation={[2.05, 0.41, 0.68]}
+              position={[0.5, 0.5, -0.5]}
             />
             <group
               name="008_locator_8"
-              position={[0.43, 0.52, -0.42]}
-              rotation={[2.03, 0.42, -2.46]}
+              position={[0.5, -0.5, -0.5]}
             />
           </mesh>
         </group>

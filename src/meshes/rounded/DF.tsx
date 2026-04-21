@@ -25,31 +25,29 @@ export const DF = React.forwardRef<THREE.Group, JSX.IntrinsicElements["group"]>(
           <mesh name="df" castShadow receiveShadow geometry={nodes.df.geometry}>
             {children}
             <group
-              name="0f1_locator_-1"
-              position={[0, -0.77, 0]}
-              rotation={[Math.PI, -1.57, 0]}
-            />
-            <group
-              name="0f1_locator_1"
-              position={[-0.77, 0, 0]}
-              rotation={[-Math.PI, 0, Math.PI / 2]}
-            />
-            <group
               name="0f1_locator_0"
-              position={[0, 0, 0.77]}
-              rotation={[Math.PI / 2, -1.57, 0]}
+              position={[0, 0, -0.8]}
             />
             <group
-              name="0f1_locator_0"
-              position={[0, 0, -0.77]}
-              rotation={[-Math.PI / 2, Math.PI / 2, 0]}
+              name="00f_locator_-0.5"
+              position={[-0.8, 0, 0]}
             />
             <group
-              name="0f2_locator_1"
-              position={[0.77, 0, 0]}
-              rotation={[0, 0, -Math.PI / 2]}
+              name="00f_locator_-1"
+              position={[0, -0.8, 0]}
             />
-            <group name="0f2_locator_-1" position={[0, 0.77, 0]} />
+            <group
+              name="00f_locator_0"
+              position={[0, 0, 0.8]}
+            />
+            <group
+              name="00f_locator_0.5"
+              position={[0.8, 0, 0]}
+            />
+            <group 
+              name="00f_locator_1" 
+              position={[0, 0.8, 0]} 
+            />
           </mesh>
         </group>
       </group>
