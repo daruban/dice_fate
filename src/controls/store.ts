@@ -153,7 +153,15 @@ export function getDiceToRoll(
     const { style, type } = die;
     for (let i = 0; i < count; i++) {
       if (advantage === null) {
-        if (type === "D100") {
+        if (type === "D12M") {
+          dice.push({
+            dice: [
+              { id: generateDiceId(), style, type: "D12" },
+              { id: generateDiceId(), style, type: "D12" },
+            ],
+            combination: "MOD",
+          });
+        } else if (type === "D100") {
           // Push a d100 and d10 when rolling a d100
           dice.push({
             dice: [

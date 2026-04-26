@@ -27,27 +27,27 @@ export const D12M = React.forwardRef<
         <mesh name="d12M" castShadow receiveShadow geometry={nodes.d12M.geometry}>
           {children}
           <group
-            name="M12_locator_1"
+            name="012_locator_1"
             position={[-0.84, -0.41, -0.01]}
           />
           <group
-            name="M12_locator_2"
+            name="012_locator_2"
             position={[-0.25, -0.41, -0.8]}
           />
           <group
-            name="M12_locator_3"
+            name="012_locator_3"
             position={[-0.68, 0.44, -0.48]}
           />
           <group
-            name="M12_locator_4"
+            name="012_locator_4"
             position={[-0.67, 0.44, 0.5]}
           />
           <group
-            name="M12_locator_5"
+            name="012_locator_5"
             position={[-0.27, -0.41, 0.79]}
           />
           <group
-            name="M12_locator_6"
+            name="012_locator_6"
             position={[0.27, 0.44, 0.79]}
           />
           <group
@@ -55,7 +55,7 @@ export const D12M = React.forwardRef<
             position={[0, 0.96, 0]}
           />
           <group
-            name="M12_locator_8"
+            name="012_locator_8"
             position={[0.67, -0.41, 0.5]}
           />
           <group
@@ -63,15 +63,15 @@ export const D12M = React.forwardRef<
             position={[0.68, -0.41, -0.48]}
           />
                     <group
-            name="M12_locator_10"
+            name="012_locator_10"
             position={[0, -0.93, 0]}
           />
           <group
-            name="M12_locator_11"
+            name="012_locator_11"
             position={[0.25, 0.44, -0.8]}
           />
           <group 
-            name="M12_locator_12" 
+            name="012_locator_12" 
             position={[0.84, 0.44, -0.01]} 
           />
         </mesh>

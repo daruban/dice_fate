@@ -38,6 +38,7 @@ function createStandardSet(style: DiceStyle): DiceSet {
       { id: `${id}_D20`, type: "D20", style },
       { id: `${id}_D100`, type: "D100", style },
       { id: `${id}_DF`, type: "DF", style },
+      { id: `${id}_D12M`, type: "D12M", style },
     ],
     previewImage: standardPreviews[style],
   };
@@ -65,30 +66,3 @@ const allSet: DiceSet = {
 };
 
 export const diceSets: DiceSet[] = [...standardSets, allSet];
-
-function createD12ModSet(style: DiceStyle): DiceSet {
-  return {
-    id: `${style}_D12_MOD`,
-    name: `${style.toLowerCase()} 2d12 mod`,
-    dice: [{
-      id: `${style}_D12_MOD_MAIN`,
-      combination: "MOD", // Новая комбинация!
-      dice: [
-        { id: `${style}_D12_MOD_D1`, type: "D12", style },
-        { id: `${style}_D12_MOD_D2`, type: "D12", style }
-      ]
-    } as any], // Приведение типов если нужно
-    previewImage: standardPreviews[style], // Или своя иконка
-  };
-}
-
-const modSets = [
-  createStandardSet("GALAXY"),
-  createStandardSet("GEMSTONE"),
-  createStandardSet("GLASS"),
-  createStandardSet("IRON"),
-  createStandardSet("NEBULA"),
-  createStandardSet("SUNRISE"),
-  createStandardSet("SUNSET"),
-  createStandardSet("WALNUT"),
-];
