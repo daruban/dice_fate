@@ -4,6 +4,7 @@ import { DiceType } from "../../types/DiceType";
 import { D10 } from "./D10";
 import { D100 } from "./D100";
 import { D12 } from "./D12";
+import { D12M } from "./D12M";
 import { D20 } from "./D20";
 import { D4 } from "./D4";
 import { DF } from "./DF";
@@ -31,6 +32,8 @@ export const RoundedDiceMesh = React.forwardRef<THREE.Group, Props>(
         return <D20 ref={ref} {...props} />;
       case "D100":
         return <D100 ref={ref} {...props} />;
+      case "D12M":
+        return <D12M ref={ref} {...props} />;
       default:
         throw Error(`Dice type ${diceType} error: not implemented`);
     }
